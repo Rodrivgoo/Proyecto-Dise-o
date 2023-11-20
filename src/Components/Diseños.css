@@ -240,7 +240,7 @@ body {
 /* Estilos adicionales para pantallas más pequeñas */
 @media (max-width: 10000px) {
     .carrusel-primeras-cinco {
-        max-width: 100px; 
+        max-width: 30%; 
     }
     .palabras{
         margin-bottom: 15px;
