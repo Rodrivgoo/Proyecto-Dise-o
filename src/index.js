@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ReactGA from "react-ga4";
-ReactGA.initialize("G-99ZQEEP08K");
+ReactGA.initialize("G-SY0RX1MWJD");
 
 ReactGA.send({
   hitType:"pageview",
