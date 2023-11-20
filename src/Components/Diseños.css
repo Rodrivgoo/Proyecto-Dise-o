@@ -238,9 +238,9 @@ body {
 }
 
 /* Estilos adicionales para pantallas más pequeñas */
-@media (max-width: 3000px) {
+@media (max-width: 10000px) {
     .carrusel-primeras-cinco {
-        max-width: 30%; 
+        max-width: 100px; 
     }
     .palabras{
         margin-bottom: 15px;
