@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './Diseños.css';
 import Navbar from './Navbar';
 
 const DescripcionPelicula = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [descripcionPelicula, setDescripcionPelicula] = useState({});
     const [trailerKey, setTrailerKey] = useState('');
-
     const [peliculasIds, setPeliculasIds] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [comentariosPorPelicula, setComentariosPorPelicula] = useState({});
@@ -75,12 +75,12 @@ const DescripcionPelicula = () => {
     };
 
     const comentariosPelicula = comentariosPorPelicula[id] || [];
-
     return (
         <div className="container mt-4 background_text">
             <div className="row">
                 <div className="col-md-4 mb-4">
                     <div className="imagen-container">
+
                         <img className="img-fluid centrado" src={`https://image.tmdb.org/t/p/w300${descripcionPelicula.poster_path}`} alt={descripcionPelicula.title} />
                     </div>
                 </div>

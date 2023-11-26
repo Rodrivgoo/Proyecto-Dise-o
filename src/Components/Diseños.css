@@ -270,6 +270,7 @@ body {
 @media (max-width: 10000px) {
     .carrusel-primeras-cinco {
         max-width: 80%; 
+
     }
     .palabras{
         margin-bottom: 15px;
