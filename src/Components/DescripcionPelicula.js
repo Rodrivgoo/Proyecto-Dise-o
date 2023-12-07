@@ -119,11 +119,30 @@ const DescripcionPelicula = () => {
                     />
                     <button type="submit">Comentar</button>
                 </form>
-                <ul>
-                    {comentariosPelicula.map((comentario, index) => (
-                        <li key={index}>{comentario.texto}</li>
-                    ))}
-                </ul>
+                {comentariosPelicula.map((comentario, index) => (
+                    <div
+                    key={index}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center', // Centra verticalmente los elementos flexibles
+                        marginBottom: '5px',
+                        padding: '5px',
+                        border: '1px solid #ccc',
+                        backgroundColor: 'white',
+                        color: 'black',
+                        marginTop: '5px',
+                        overflow: 'hidden',
+                        wordWrap: 'break-word',
+                    }}
+                >
+                    <img
+                        src="https://picsum.photos/50/50/?random"
+                        className="rounded-circle mr-3"
+                        alt="Avatar"
+                    />
+                    <div>{comentario.texto}</div>
+                </div>
+                ))}
             </div>
         </div>
     );
